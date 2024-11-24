@@ -1,149 +1,166 @@
-<!DOCTYPE html>
-<html lang="en">
 
+<!DOCTYPE html>
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Renomansss - Web Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
+    <title>Aşkın Gücü</title>
+    <style>
+        /* Sayfa Genel Stili */
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ffafcc, #f8a5c2); /* Pembe tonları */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Ekranın Ortasında Sabit Kalp ve Harfler */
+        .center-heart {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 150px;
+            color: #f6a9c2;
+            animation: pulse 1.5s infinite; /* Ortada kalp pulsu */
+            z-index: 145;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .center-heart span {
+            position: absolute;
+            font-size: 40px;
+        }
+
+        .center-heart .left {
+            left: -50px;
+            color: antiquewhite; /* Kalbin soluna B harfini yerleştir */
+        }
+
+        .center-heart .right {
+            right: -50px; 
+            color: aquamarine;/* Kalbin sağına F harfini yerleştir */
+        }
+
+        /* Kalp Büyüme Animasyonu */
+        @keyframes pulse {
+            0% { transform: translate(-50%, -50%) scale(1); }
+            50% { transform: translate(-50%, -50%) scale(1.2); }
+            100% { transform: translate(-50%, -50%) scale(1); }
+        }
+        @keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+        /* Kalp Efekti Animasyonu */
+        .floating-heart {
+            position: absolute;
+            font-size: 30px;
+            opacity: 0;
+            animation: float 5s linear infinite;
+        }
+
+        /* Kalp Düşüş Animasyonu */
+        @keyframes float {
+            0% {
+                top: -50px; /* Başlangıç noktası ekranın üst sınırında */
+                opacity: 1;
+            }
+            100% {
+                top: 100vh; /* Ekranın alt kısmına kadar düşsün */
+                opacity: 0;
+            }
+        }
+
+        /* Arka Plan Görseli */
+        .image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Alt footer kısmı */
+        footer {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 1.2em;
+            color: #f8b0d4;
+        }
+    </style>
 </head>
-
 <body>
-    <!-- Header -->
-    <header>
-        <h1>Renomansss</h1>
-        <p>Web Developer | Digital Designer | Creative</p>
-    </header>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#timeline">Timeline</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <!-- Ekranın Ortasında Sabit Kalp ve Harfler -->
+    <div class="center-heart">
+        <span class="left">B</span> ❤️ <span class="right">F</span>
+    </div>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <div class="bio">
-                <h3>Who is "Picode"?</h3>
-                <p>My real name is Yahya. I was born in 2005. I am a software developer who has been writing programs since I was 12 years old. I love creating my own projects and my passion for technology grows every day.</p>
-            </div>
-            <div class="vision">
-                <h3>My Vision</h3>
-                <p>My goal is to create technologies for the benefit of humanity! I am always open to projects that improve humanity and I am eager to be part of such projects.</p>
-            </div>
-            <div class="interests">
-                <h3>My Interests</h3>
-                <ul>
-                    <li>Video Games</li>
-                    <li>Social Media</li>
-                    <li>Video Editing</li>
-                    <li>Drawing</li>
-                    <li>Music</li>
-                </ul>
-            </div>
-            <div class="languages">
-                <h3>Languages I Speak</h3>
-                <ul>
-                    <li>Turkish</li>
-                    <li>Circassian</li>
-                    <li>English</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+    <!-- Arka Plan Görseli -->
+    <img src="https://via.placeholder.com/1200x800/ffafdc/ffffff?text=s" alt="Romantik Arka Plan" class="image">
 
-    <!-- Career Timeline Section -->
-    <section id="timeline" class="timeline">
-        <h2>Career Journey</h2>
-        <div class="timeline-container">
-            <div class="timeline-item">
-                <div class="timeline-date">October 2015</div>
-                <div class="timeline-content">
-                    <h3>Programming</h3>
-                    <p>I started writing programs in October 2015. I was in 5th grade and used Scratch in my first computer class. Since then, I have been interested in programming.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">July 2018</div>
-                <div class="timeline-content">
-                    <h3>Web Development</h3>
-                    <p>I have been involved in web development since 2018. Over time, I gained experience with various web technologies such as HTML, CSS, JavaScript, and React.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">February 2023</div>
-                <div class="timeline-content">
-                    <h3>Game Development</h3>
-                    <p>It has always been my dream to make my own game. I started working on game software to realize this dream.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">June 2024</div>
-                <div class="timeline-content">
-                    <h3>Graduation</h3>
-                    <p>Hopefully, I will graduate in June 2024 from "İş Adamları Mesleki ve Teknik Anadolu Lisesi", Computer Technologies department.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Kalp Efekti -->
+    <div id="floatingHearts"></div>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <div class="project-item">
-            <h3>Project 1</h3>
-            <img src="https://via.placeholder.com/500x300" alt="Project 1">
-            <p>This project was a big step in web design and user experience. I used modern tools to create a user-friendly interface.</p>
-        </div>
-        <div class="project-item">
-            <h3>Project 2</h3>
-            <img src="https://via.placeholder.com/500x300" alt="Project 2">
-            <p>This project is a blog platform I built using React and Node.js. It offers full functionality for blogging and management.</p>
-        </div>
-        <div class="project-item">
-            <h3>Project 3</h3>
-            <img src="https://via.placeholder.com/500x300" alt="Project 3">
-            <p>I've developed an e-commerce platform that provides users with a fast and secure shopping experience.</p>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML & CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>UI/UX Design</li>
-            <li>Git & GitHub</li>
-        </ul>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <form action="#">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Write your message" rows="5" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Renomansss. All Rights Reserved.</p>
     </footer>
 
-    <!-- Fire Effect Script -->
-    <script src="script.js"></script> <!-- Link to the JS file -->
-</body>
+    <script>
+        // Rastgele Kalp Efekti
+        function createFloatingHearts() {
+            const container = document.getElementById("floatingHearts");
+            const numberOfHearts = 5;  // Ekranda belirecek kalp sayısı
 
+            for (let i = 0; i < numberOfHearts; i++) {
+                const heart = document.createElement("div");
+                heart.classList.add("floating-heart");
+                heart.innerHTML = "❤️";
+
+                // Rastgele konum, animasyon süresi ayarlama
+                const randomX = Math.random() * 100; // Yatayda rastgele konum
+                const randomDelay = Math.random() * 2; // Rastgele gecikme
+                const randomDuration = Math.random() * (5 - 3) + 3; // 3s ile 5s arası
+
+                heart.style.left = `${randomX}%`;
+                heart.style.animationDuration = `${randomDuration}s`;
+                heart.style.animationDelay = `-${randomDelay}s`;
+                heart.style.animationTimingFunction = "linear";
+
+                // Kalp yalnızca düşüş animasyonuyla hareket edecek
+                heart.style.animation = `float ${randomDuration}s linear infinite`;
+
+                container.appendChild(heart);
+
+                // Kalp bir süre sonra kaybolacak
+                setTimeout(() => {
+                    heart.remove();
+                }, randomDuration * 1000);
+            }
+        }
+
+        // Kalp animasyonunu başlat
+        setInterval(createFloatingHearts, 1000); // Her 1 saniyede bir yeni kalp oluştur
+    </script>
+
+</body>
 </html>
