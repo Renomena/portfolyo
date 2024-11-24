@@ -1,89 +1,149 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Renomansss - Web Portfolio</title> <!-- Başlık burada güncellendi -->
+    <title>Renomansss - Web Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"> <!-- CSS dosyasını bağladık -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
 </head>
 
 <body>
     <!-- Header -->
     <header>
         <h1>Renomansss</h1>
-        <p>Web Geliştiricisi | Dijital Tasarımcı | Yaratıcı</p>
+        <p>Web Developer | Digital Designer | Creative</p>
     </header>
 
     <!-- Navigation -->
     <nav>
-        <a href="#about">Hakkımda</a>
-        <a href="#projects">Projeler</a>
-        <a href="#skills">Beceriler</a>
-        <a href="#contact">İletişim</a>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#contact">Contact</a>
     </nav>
 
     <!-- About Section -->
     <section id="about" class="about">
-        <h2>Hakkımda</h2>
-        <p>
-            Merhaba! Ben Renomansss, web geliştirme ve dijital tasarım konusunda tutkulu bir profesyonelim. 
-            Hedefim, kullanıcı dostu ve estetik açıdan etkileyici projeler geliştirmektir. HTML, CSS, JavaScript gibi teknolojilerle hem frontend hem de backend tarafında çalışarak etkili çözümler sunuyorum.
-        </p>
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="bio">
+                <h3>Who is "Picode"?</h3>
+                <p>My real name is Yahya. I was born in 2005. I am a software developer who has been writing programs since I was 12 years old. I love creating my own projects and my passion for technology grows every day.</p>
+            </div>
+            <div class="vision">
+                <h3>My Vision</h3>
+                <p>My goal is to create technologies for the benefit of humanity! I am always open to projects that improve humanity and I am eager to be part of such projects.</p>
+            </div>
+            <div class="interests">
+                <h3>My Interests</h3>
+                <ul>
+                    <li>Video Games</li>
+                    <li>Social Media</li>
+                    <li>Video Editing</li>
+                    <li>Drawing</li>
+                    <li>Music</li>
+                </ul>
+            </div>
+            <div class="languages">
+                <h3>Languages I Speak</h3>
+                <ul>
+                    <li>Turkish</li>
+                    <li>Circassian</li>
+                    <li>English</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Timeline Section -->
+    <section id="timeline" class="timeline">
+        <h2>Career Journey</h2>
+        <div class="timeline-container">
+            <div class="timeline-item">
+                <div class="timeline-date">October 2015</div>
+                <div class="timeline-content">
+                    <h3>Programming</h3>
+                    <p>I started writing programs in October 2015. I was in 5th grade and used Scratch in my first computer class. Since then, I have been interested in programming.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">July 2018</div>
+                <div class="timeline-content">
+                    <h3>Web Development</h3>
+                    <p>I have been involved in web development since 2018. Over time, I gained experience with various web technologies such as HTML, CSS, JavaScript, and React.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">February 2023</div>
+                <div class="timeline-content">
+                    <h3>Game Development</h3>
+                    <p>It has always been my dream to make my own game. I started working on game software to realize this dream.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">June 2024</div>
+                <div class="timeline-content">
+                    <h3>Graduation</h3>
+                    <p>Hopefully, I will graduate in June 2024 from "İş Adamları Mesleki ve Teknik Anadolu Lisesi", Computer Technologies department.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
-        <h2>Projeler</h2>
+        <h2>Projects</h2>
         <div class="project-item">
-            <h3>Proje 1</h3>
-            <img src="https://via.placeholder.com/500x300" alt="Proje 1">
-            <p>Bu proje web tasarımı ve kullanıcı deneyimi konusunda büyük bir adım attım. Modern araçlar kullanarak kullanıcı dostu bir arayüz geliştirdim.</p>
+            <h3>Project 1</h3>
+            <img src="https://via.placeholder.com/500x300" alt="Project 1">
+            <p>This project was a big step in web design and user experience. I used modern tools to create a user-friendly interface.</p>
         </div>
         <div class="project-item">
-            <h3>Proje 2</h3>
-            <img src="https://via.placeholder.com/500x300" alt="Proje 2">
-            <p>React ve Node.js ile geliştirdiğim bu projede, tam donanımlı bir blog platformu oluşturuldu.</p>
+            <h3>Project 2</h3>
+            <img src="https://via.placeholder.com/500x300" alt="Project 2">
+            <p>This project is a blog platform I built using React and Node.js. It offers full functionality for blogging and management.</p>
         </div>
         <div class="project-item">
-            <h3>Proje 3</h3>
-            <img src="https://via.placeholder.com/500x300" alt="Proje 3">
-            <p>Kapsamlı bir e-ticaret platformu geliştirdim, kullanıcılara hızlı ve güvenli bir alışveriş deneyimi sundum.</p>
+            <h3>Project 3</h3>
+            <img src="https://via.placeholder.com/500x300" alt="Project 3">
+            <p>I've developed an e-commerce platform that provides users with a fast and secure shopping experience.</p>
         </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
-        <h2>Becerilerim</h2>
+        <h2>Skills</h2>
         <ul>
             <li>HTML & CSS</li>
             <li>JavaScript</li>
             <li>React</li>
             <li>Node.js</li>
-            <li>UI/UX Tasarımı</li>
+            <li>UI/UX Design</li>
             <li>Git & GitHub</li>
         </ul>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <h2>İletişim</h2>
+        <h2>Contact</h2>
         <form action="#">
-            <input type="text" name="name" placeholder="Adınız" required>
-            <input type="email" name="email" placeholder="E-posta Adresiniz" required>
-            <textarea name="message" placeholder="Mesajınızı yazın" rows="5" required></textarea>
-            <button type="submit">Gönder</button>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Write your message" rows="5" required></textarea>
+            <button type="submit">Send</button>
         </form>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Renomansss. Tüm Hakları Saklıdır.</p>
+        <p>&copy; 2024 Renomansss. All Rights Reserved.</p>
     </footer>
 
-    <!-- Ateş Etkisi Script -->
-    <script src="script.js"></script> <!-- JavaScript dosyasını bağladık -->
+    <!-- Fire Effect Script -->
+    <script src="script.js"></script> <!-- Link to the JS file -->
 </body>
 
 </html>
